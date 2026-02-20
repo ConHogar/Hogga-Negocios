@@ -1,0 +1,33 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke-brand { stroke: #136565; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-accent { stroke: #e8772a; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-light { fill: #f3fbfa; }
+      .text-lbl { font-family: sans-serif; font-size: 10px; fill: #5c5c5c; font-weight: 600; text-anchor: middle; }
+      .star { fill: #e8772a; stroke: none; }
+    </style>
+  </defs>
+  
+  <!-- 5 Stars -->
+  <g transform="translate(60, 40)">
+    <polygon points="10,0 13,7 20,7 15,12 17,19 10,15 3,19 5,12 0,7 7,7" class="star" />
+    <polygon points="35,0 38,7 45,7 40,12 42,19 35,15 28,19 30,12 25,7 32,7" class="star" />
+    <polygon points="60,0 63,7 70,7 65,12 67,19 60,15 53,19 55,12 50,7 57,7" class="star" />
+    <polygon points="85,0 88,7 95,7 90,12 92,19 85,15 78,19 80,12 75,7 82,7" class="star" />
+    <polygon points="110,0 113,7 120,7 115,12 117,19 110,15 103,19 105,12 100,7 107,7" class="star" />
+  </g>
+
+  <!-- Bubbles -->
+  <rect x="50" y="70" width="140" height="30" rx="10" class="stroke-brand fill-light" />
+  <line x1="65" y1="80" x2="160" y2="80" stroke="#e5e7eb" stroke-width="2" />
+  <line x1="65" y1="90" x2="130" y2="90" stroke="#e5e7eb" stroke-width="2" />
+
+  <rect x="70" y="110" width="140" height="30" rx="10" stroke="#e5e7eb" fill="none" />
+  
+  <!-- Arrow -->
+  <path d="M220 100 L240 100" class="stroke-accent" marker-end="url(#arrow)" />
+  <text x="260" y="105" class="text-lbl">Confianza</text>
+  
+  <text x="120" y="160" class="text-lbl">= Elección</text>
+</svg>

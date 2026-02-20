@@ -1,0 +1,26 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke-brand { stroke: #136565; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-accent { stroke: #e8772a; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-light { fill: #f3fbfa; }
+      .text-lbl { font-family: sans-serif; font-size: 10px; fill: #5c5c5c; font-weight: 600; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Speed Meter -->
+  <path d="M50 100 A50 50 0 1 1 150 100" class="stroke-brand" fill="none" />
+  <line x1="100" y1="100" x2="60" y2="60" class="stroke-accent" stroke-width="3" />
+  <circle cx="100" cy="100" r="5" fill="#136565" />
+  <text x="100" y="125" class="text-lbl">&lt; 1s Carga</text>
+
+  <!-- Flow Arrow -->
+  <line x1="160" y1="90" x2="200" y2="90" class="stroke-brand" marker-end="url(#arrow)" />
+  
+  <!-- Button -->
+  <rect x="210" y="75" width="80" height="30" rx="4" class="stroke-accent fill-light" />
+  <text x="250" y="93" class="text-lbl" fill="#e8772a">WhatsApp</text>
+
+  <!-- Result -->
+  <text x="250" y="130" class="text-lbl">= Cliente</text>
+</svg>

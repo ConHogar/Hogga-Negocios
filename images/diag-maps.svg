@@ -1,0 +1,35 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke-brand { stroke: #136565; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-accent { stroke: #e8772a; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-light { fill: #f3fbfa; }
+      .text-lbl { font-family: sans-serif; font-size: 10px; fill: #5c5c5c; font-weight: 600; text-anchor: middle; }
+      .text-sm { font-family: sans-serif; font-size: 8px; fill: #9ca3af; text-anchor: middle; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+  
+  <!-- Map Pin -->
+  <path d="M70 50 C70 30 100 30 100 50 C100 70 85 90 85 90 S70 70 70 50 Z" class="stroke-accent fill-light" />
+  <circle cx="85" cy="50" r="5" fill="#e8772a" />
+
+  <!-- Top 3 Blocks -->
+  <rect x="130" y="30" width="120" height="24" rx="4" class="stroke-brand fill-light" />
+  <rect x="130" y="60" width="120" height="24" rx="4" stroke="#e5e7eb" stroke-width="2" fill="none" />
+  <rect x="130" y="90" width="120" height="24" rx="4" stroke="#e5e7eb" stroke-width="2" fill="none" />
+  
+  <!-- Highlight #1 -->
+  <circle cx="145" cy="42" r="4" fill="#136565" />
+  <line x1="155" y1="42" x2="230" y2="42" class="stroke-brand" stroke-width="3" />
+
+  <!-- Arrow Flow -->
+  <path d="M150 130 Q150 160 200 160" class="stroke-accent" stroke-dasharray="4 4" />
+  <polygon points="200,160 194,156 194,164" fill="#e8772a" />
+
+  <!-- Labels -->
+  <text x="85" y="110" class="text-lbl">Visibilidad</text>
+  <text x="210" y="140" class="text-sm">Intención</text>
+  <text x="230" y="165" class="text-lbl" fill="#e8772a">Contacto</text>
+</svg>

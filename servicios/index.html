@@ -7,171 +7,80 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#136565" />
 
-    <title>El Sistema — Hogga Negocios</title>
+    <!-- Performance (opcional) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://wa.me" />
+
+    <!-- Consent logic (centralizada) -->
+    <script src="/js/consent.js" defer></script>
+
+    <title>Arquitectura Comercial | Gana Posición Local | Hogga Vértice</title>
     <meta name="description"
-        content="No vendemos servicios sueltos. Instalamos un Motor de Demanda (Atracción, Captura, Multiplicación) para que domines tu ciudad." />
+        content="Deja de competir por atención. Instalamos la estructura comercial (SEO, Web, Datos) que captura demanda real, convierte visitas y construye autoridad acumulativa." />
+    <link rel="canonical" href="https://vertice.hogga.cl/servicios/" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vertice.hogga.cl/servicios/" />
+    <meta property="og:site_name" content="Hogga Vértice" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:title" content="Arquitectura Comercial | Gana Posición Local | Hogga Vértice" />
+    <meta property="og:description"
+        content="Deja de competir por atención. Instalamos la estructura comercial (SEO, Web, Datos) que captura demanda real, convierte visitas y construye autoridad acumulativa." />
+    <meta property="og:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+    <meta property="og:image:alt" content="Hogga Vértice — estructura comercial" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Servicios — Hogga Vértice" />
+    <meta name="twitter:description"
+        content="Instalamos una arquitectura comercial (Demanda, Conversión, Autoridad) para ganar posición y sostener captación en el tiempo." />
+    <meta name="twitter:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favic/favicon-16x16.png">
+    <link rel="manifest" href="/images/favic/site.webmanifest">
+    <link rel="mask-icon" href="/images/favic/safari-pinned-tab.svg" color="#136565">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Performance -->
+    <link rel="preload" as="image" href="/images/logo.webp" />
+    <link rel="stylesheet" href="/css/styles.css?v=20260211" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
 
-    <style>
-        /* Reuse Negocios styles */
-        .hero-negocios {
-            padding: 80px 0;
-            text-align: center;
-            background: #fdfdfd;
-            border-bottom: 1px solid #eee;
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vertice.hogga.cl/servicios/",
+          "url": "https://vertice.hogga.cl/servicios/",
+          "name": "Servicios — Hogga Vértice",
+          "description": "No vendemos servicios sueltos. Instalamos una arquitectura comercial (Demanda, Conversión, Autoridad) para ganar posición y sostener captación en el tiempo.",
+          "isPartOf": { "@id": "https://vertice.hogga.cl/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vertice.hogga.cl/" },
+            { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://vertice.hogga.cl/servicios/" }
+          ]
         }
-
-        .hero-negocios h1 {
-            max-width: 900px;
-            margin: 0 auto 20px;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            line-height: 1.1;
-            color: #111;
-        }
-
-        .section-block {
-            padding: 80px 0;
-        }
-
-        .bg-light {
-            background: #f9f9f9;
-        }
-
-        /* Engine Pillars */
-        .pillar-row {
-            display: flex;
-            gap: 60px;
-            align-items: center;
-            margin-bottom: 100px;
-        }
-
-        .pillar-row:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .pillar-content h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--brand);
-        }
-
-        .pillar-content p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .pillar-content ul {
-            margin-top: 20px;
-            padding-left: 20px;
-        }
-
-        .pillar-content li {
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        .pillar-graphic {
-            flex: 1;
-            background: #f0f0f0;
-            height: 300px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            color: #999;
-            border: 1px dashed #ccc;
-        }
-
-        /* Pricing Cards */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .price-card {
-            padding: 40px;
-            border: 1px solid #eee;
-            border-radius: 16px;
-            background: white;
-            position: relative;
-            transition: transform 0.2s;
-        }
-
-        .price-card.featured {
-            border: 2px solid var(--brand);
-            box-shadow: 0 10px 40px rgba(19, 101, 101, 0.1);
-            transform: scale(1.02);
-        }
-
-        .pricing-badge {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--brand);
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .plan-name {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #111;
-            margin-bottom: 10px;
-        }
-
-        .plan-price {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #111;
-            margin-bottom: 5px;
-        }
-
-        .plan-period {
-            font-size: 1rem;
-            color: #666;
-            font-weight: 400;
-        }
-
-        .plan-desc {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-
-        .plan-features {
-            list-style: none;
-            padding: 0;
-            margin: 30px 0;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        .plan-features li {
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-            display: flex;
-            gap: 10px;
-        }
-
-        .btn-block {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -179,206 +88,350 @@
     <!-- HEADER -->
     <header class="main-header">
         <div class="container header-content">
-            <a class="brand" href="/" aria-label="Hogga, inicio">
-                <img class="logo" src="/images/logo.webp" alt="Hogga" width="120" height="36" />
-                <span class="brand-text">Negocios</span>
+            <a class="brand" href="/" aria-label="Hogga Vértice, inicio">
+                <img class="logo" src="/images/logo.webp" alt="Hogga Vértice" width="120" height="36" />
+                <span class="brand-text">Hogga Vértice</span>
             </a>
 
-            <nav id="site-nav" class="site-nav">
-                <a href="/servicios/" style="color: var(--brand);">El Sistema</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+                <span class="nav-toggle-box" aria-hidden="true">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navegación principal">
+                <a href="/servicios/">Servicios</a>
+                <a href="/resultados/">Resultados</a>
                 <a href="/decisiones/">Decisiones</a>
-                <a href="https://wa.me/56951759158" class="btn primary"
-                    style="padding: 8px 16px; font-size: 0.9rem;">Ver si califico</a>
+                <a href="/contacto/">Contacto</a>
+                <a class="nav-cta"
+                    href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20evaluar%20la%20posici%C3%B3n%20comercial%20de%20mi%20negocio"
+                    target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="negocios-home">
 
-        <!-- HERO -->
-        <section class="hero-negocios">
+        <!-- HERO (Full Height) -->
+        <section class="nh-hero nh-hero--full">
+            <div class="nh-hero-inner">
+                <div class="nh-wrap" style="text-align:center; align-items:center;">
+                    <p class="nh-hero-tag">Arquitectura Comercial</p>
+
+                    <h1>Deja de competir por atención.<br>Gana <span style="color: #e8772a;">posición</span>.</h1>
+
+                    <p class="nh-sub" style="margin-left:auto; margin-right:auto;">
+                        No vendemos “servicios sueltos”. Instalamos una arquitectura comercial para que tu negocio
+                        capture demanda,
+                        convierta con menos fricción y construya autoridad que se acumula en el tiempo.
+                    </p>
+
+                    <!-- Custom Bullets adapted for nh-hero -->
+                    <div class="svc-hero-bullets">
+                        <div class="svc-hero-bullet">
+                            <span>✓</span> Intervenimos donde ya existe intención
+                        </div>
+                        <div class="svc-hero-bullet">
+                            <span>✓</span> Diseñamos para convertir (no por "suerte")
+        </section>
+
+        <!-- ARCHITECTURE / PILLARS -->
+        <section class="nh-section svc-pillars">
             <div class="container">
-                <h1>No vendemos horas.<br>Instalamos <span style="color: var(--brand);">Activos Digitales.</span></h1>
-                <p class="lead">
-                    Olvídate de contratar "un post en Instagram". Nuestro trabajo es construir la infraestructura para
-                    que tu negocio domine localmente.
-                </p>
+                <div class="sec-heading">
+                    <h2>La Arquitectura Comercial que Cambia tu Posición</h2>
+                    <p class="lead">
+                        Cada componente por separado ayuda.<br>
+                        En conjunto, altera tu posición frente a la competencia.
+                    </p>
+                </div>
+
+                <!-- Block 1 -->
+                <div class="svc-pillar-row">
+                    <div class="svc-pillar-text">
+                        <h2>1. Captura de Demanda Real</h2>
+                        <p>Intervenimos donde ya existe intención de compra. No generamos tráfico genérico; capturamos
+                            demanda existente.</p>
+                        <ul>
+                            <li>Posicionamiento en búsquedas locales con intención alta</li>
+                            <li>Optimización de ficha Google Maps</li>
+                            <li>Ordenamiento de señales que influyen en ranking</li>
+                        </ul>
+                        <p><strong>👉 Resultado:</strong> Más consultas calificadas y menor dependencia del precio.</p>
+
+                        <p style="margin-top:14px;">
+                            <a href="/servicios/seo-local/" style="font-weight:700;">Ver detalle: SEO local</a>
+                            <span style="opacity:.5;"> · </span>
+                            <a href="/servicios/google-maps/" style="font-weight:700;">Google Maps</a>
+                        </p>
+                    </div>
+                    <div class="svc-pillar-img">
+                        <img src="/images/diag-maps.svg" alt="Diagrama de captura de demanda real" width="300"
+                            height="200">
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="svc-pillar-row">
+                    <div class="svc-pillar-text">
+                        <h2>2. Conversión como Infraestructura</h2>
+                        <p>No basta con aparecer. Si el cliente entra y se va, el sistema falla.</p>
+                        <p>Intervenimos en la claridad de propuesta, eliminación de fricción y jerarquía visual
+                            orientada a la decisión.</p>
+                        <ul>
+                            <li>Estructura de landing orientada a decisión</li>
+                            <li>Camino de acción obvio (llamar, WhatsApp)</li>
+                            <li>Velocidad real en celular</li>
+                        </ul>
+                        <p><strong>👉 Resultado:</strong> Más conversaciones reales y mejor calidad de lead.</p>
+
+                        <p style="margin-top:14px;">
+                            <a href="/servicios/paginas-web-rapidas/" style="font-weight:700;">Ver detalle: Páginas web
+                                rápidas</a>
+                        </p>
+                    </div>
+                    <div class="svc-pillar-img">
+                        <img src="/images/conversion.webp" alt="Diagrama de conversión como infraestructura" width="400"
+                            height="300">
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="svc-pillar-row">
+                    <div class="svc-pillar-text">
+                        <h2>3. Autoridad que se Acumula</h2>
+                        <p>En negocios locales, la confianza es ventaja competitiva. Instalamos sistemas para consolidar
+                            señales consistentes.</p>
+                        <ul>
+                            <li>Activar reseñas estratégicamente</li>
+                            <li>Construir percepción de opción dominante</li>
+                            <li>Alinear reputación con posicionamiento</li>
+                        </ul>
+                        <p><strong>👉 Resultado:</strong> Decisiones más rápidas y crecimiento menos volátil.</p>
+
+                        <p style="margin-top:14px;">
+                            <a href="/resultados/" style="font-weight:700;">Ver evidencia: Resultados</a>
+                        </p>
+                    </div>
+                    <div class="svc-pillar-img">
+                        <img src="/images/diag-reviews.svg" alt="Diagrama de autoridad y confianza" width="300"
+                            height="200">
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- THE ENGINE PILLARS -->
-        <section class="section-block">
+        <!-- APPLICATIONS / WHAT THIS LOOKS LIKE IN PRACTICE -->
+        <section class="nh-section nh-section--alt svc-apps" id="aplicaciones">
             <div class="container">
+                <div class="sec-heading">
+                    <h2>Aplicaciones concretas del sistema</h2>
+                    <p class="lead">
+                        No son “paquetes”. Son intervenciones típicas que usamos para capturar demanda, subir conversión
+                        y sostener autoridad.
+                    </p>
+                </div>
 
-                <!-- Pillar 1 -->
-                <div class="pillar-row">
-                    <div class="pillar-content features-text" style="flex:1;">
-                        <h2>1. Dominio Local (Google Maps & SEO)</h2>
-                        <p>El 70% de las decisiones de servicios ocurren en Google Maps. Si no estás ahí (y en el Top
-                            3), estás invisible.</p>
-                        <ul>
-                            <li>✅ <strong>Optimización agresiva de Ficha (GBP):</strong> Categorías, fotos
-                                geo-taggeadas, atributos.</li>
-                            <li>✅ <strong>Intención de Compra:</strong> Atacamos palabras clave "High Intent" (Ej:
-                                "Veterinaria de urgencia" vs "gatitos tiernos").</li>
-                            <li>✅ <strong>Limpieza de datos:</strong> Corregimos la información que confunde a Google
-                                para superar a la competencia.</li>
-                        </ul>
+                <div class="nh-proof-grid">
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Captura de demanda</span>
+                        <span class="nh-proof-stat">SEO local con intención</span>
+                        <span class="nh-proof-impact">→ Páginas por servicio/ciudad + estructura de intención</span>
                     </div>
-                    <div class="pillar-graphic">
-                        [Gráfico: Tu negocio #1 en el Mapa]
+
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Google Maps</span>
+                        <span class="nh-proof-stat">Ficha + señales</span>
+                        <span class="nh-proof-impact">→ Optimización, categorías, fotos, reseñas, consistencia
+                            NAP</span>
+                    </div>
+
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Conversión</span>
+                        <span class="nh-proof-stat">Punto de decisión</span>
+                        <span class="nh-proof-impact">→ Mensaje, jerarquía, CTA, fricción, velocidad móvil</span>
+                    </div>
+
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Autoridad</span>
+                        <span class="nh-proof-stat">Confianza acumulativa</span>
+                        <span class="nh-proof-impact">→ Reseñas, prueba, evidencia, consistencia editorial</span>
+                    </div>
+
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Contenido con rol comercial</span>
+                        <span class="nh-proof-stat">Decisiones BoFu</span>
+                        <span class="nh-proof-impact">→ Páginas que responden dudas reales y pre-califican</span>
+                    </div>
+
+                    <div class="nh-proof-card">
+                        <span class="nh-proof-label">Medición</span>
+                        <span class="nh-proof-stat">Señales que importan</span>
+                        <span class="nh-proof-impact">→ Llamados, WhatsApp, formularios, reservas, calidad del
+                            lead</span>
                     </div>
                 </div>
 
-                <!-- Pillar 2 -->
-                <div class="pillar-row">
-                    <div class="pillar-content features-text" style="flex:1;">
-                        <h2>2. Infraestructura de Conversión</h2>
-                        <p>De nada sirve el tráfico si tu web es lenta o confusa. Construimos "Landing Pages" que cargan
-                            en menos de 1 segundo.</p>
-                        <ul>
-                            <li>✅ <strong>Velocidad Extrema:</strong> Sin bloatware. Sin WordPress lento. HTML puro de
-                                alto rendimiento.</li>
-                            <li>✅ <strong>Fricción Cero:</strong> Botones de WhatsApp pre-configurados para iniciar
-                                conversación.</li>
-                            <li>✅ <strong>Copywriting de Ventas:</strong> Textos que responden dudas y empujan a la
-                                acción (no poesía).</li>
-                        </ul>
-                    </div>
-                    <div class="pillar-graphic">
-                        [Gráfico: Carga < 1s en Móvil] </div>
-                    </div>
-
-                    <!-- Pillar 3 -->
-                    <div class="pillar-row">
-                        <div class="pillar-content features-text" style="flex:1;">
-                            <h2>3. Multiplicación (Reputación)</h2>
-                            <p>La confianza es la moneda del negocio local. Hacemos que tus clientes felices atraigan a
-                                los nuevos.</p>
-                            <ul>
-                                <li>✅ <strong>Automatización de Reseñas:</strong> Sistemas para pedir reviews en el
-                                    momento exacto.</li>
-                                <li>✅ <strong>Gestión de Respuestas:</strong> Respondemos para mostrar actividad y
-                                    cuidado.</li>
-                                <li>✅ <strong>Autoridad de Marca:</strong> Te posicionamos como la opción "segura" y
-                                    premium.</li>
-                            </ul>
-                        </div>
-                        <div class="pillar-graphic">
-                            [Gráfico: 5 Estrellas y Comentarios]
-                        </div>
-                    </div>
-
+                <div class="text-center mt-lg">
+                    <a href="https://wa.me/56951759158?text=Hola%20Hogga%20V%C3%A9rtice%2C%20quiero%20saber%20qu%C3%A9%20intervenciones%20son%20prioridad%20en%20mi%20caso.%20Rubro%3A%20__%20Ciudad%3A%20__%20Link%3A%20__"
+                        class="btn primary btn-lg">
+                        Ver qué aplica en mi negocio
+                    </a>
+                    <p class="text-sm mt-md">
+                        Te respondemos con prioridad 1–2–3 (sin humo).
+                    </p>
                 </div>
+            </div>
         </section>
 
-        <!-- PRICING / PACKAGES (Social Proof Cascading) -->
-        <section class="section-block bg-light">
+        <!-- HOW WE WORK (reemplaza Modalidades) -->
+        <section class="nh-section" id="como-trabajamos">
             <div class="container">
-                <div style="text-align: center; margin-bottom: 50px;">
-                    <h2>Planes de Crecimiento</h2>
-                    <p>Elige la velocidad a la que quieres escalar.</p>
+                <div class="sec-heading">
+                    <h2>Cómo trabajamos</h2>
+                    <p class="lead">
+                        Método claro, sin humo. Priorizamos lo que cambia posición y elimina fugas. Lo demás es ruido.
+                    </p>
                 </div>
 
-                <div class="pricing-grid">
+                <ol class="stepper" aria-label="Proceso de trabajo Hogga Vértice">
+                    <li class="stepper-item">
+                        <span class="stepper-dot">1</span>
+                        <div class="stepper-label">
+                            <b>Diagnóstico y criterio</b>
+                            Revisamos tu punto de partida y confirmamos si hay ventaja real para construir (o si no
+                            conviene aún).
+                        </div>
+                    </li>
 
-                    <!-- TIER 1 -->
-                    <article class="price-card">
-                        <h3 class="plan-name">Hogga Featured</h3>
-                        <div class="plan-price">UF 2 <span class="plan-period">/mes</span></div>
-                        <p class="plan-desc">Para quienes solo quieren más leads inmediatos.</p>
+                    <li class="stepper-item">
+                        <span class="stepper-dot">2</span>
+                        <div class="stepper-label">
+                            <b>Instalación</b>
+                            Implementamos la base que ordena el sistema: captura de demanda, claridad de propuesta y
+                            camino de acción.
+                        </div>
+                    </li>
 
-                        <ul class="plan-features">
-                            <li>🔥 <strong>Top 1 Ranking en Hogga.cl</strong> (Inmediato)</li>
-                            <li>✅ Insignia "Verificado" en nuestra red</li>
-                            <li>✅ Enlace directo a WhatsApp</li>
-                            <li>❌ Sin gestión de Google Maps</li>
-                            <li>❌ Sin Landing Page propia</li>
-                        </ul>
-                        <a href="https://wa.me/56951759158?text=Me%20interesa%20el%20plan%20Featured"
-                            class="btn outline btn-block">Solicitar Cupo</a>
-                    </article>
+                    <li class="stepper-item">
+                        <span class="stepper-dot">3</span>
+                        <div class="stepper-label">
+                            <b>Optimización</b>
+                            Ajustamos con foco comercial: lo que no aporta, se corta. Lo que aumenta decisión, se
+                            refuerza.
+                        </div>
+                    </li>
 
-                    <!-- TIER 2 (FEATURED) -->
-                    <article class="price-card featured">
-                        <div class="pricing-badge">Recomendado</div>
-                        <h3 class="plan-name">Socio Local</h3>
-                        <div class="plan-price">UF 9 <span class="plan-period">/mes</span></div>
-                        <p class="plan-desc">Para negocios que quieren superar a la competencia y ser el #1.</p>
+                    <li class="stepper-item">
+                        <span class="stepper-dot">4</span>
+                        <div class="stepper-label">
+                            <b>Medición</b>
+                            Seguimos señales claras (consultas, acciones, calidad de leads) y tomamos decisiones con
+                            datos.
+                        </div>
+                    </li>
+                </ol>
 
-                        <ul class="plan-features">
-                            <li>✨ <strong>Todo lo del plan Featured</strong></li>
-                            <li>✅ <strong>Gestión Google Maps Completa</strong></li>
-                            <li>✅ Landing Page de Alto Rendimiento</li>
-                            <li>✅ Estrategia de Reseñas</li>
-                            <li>✅ Reporte Mensual de Rendimiento</li>
-                        </ul>
-                        <a href="https://wa.me/56951759158?text=Me%20interesa%20el%20plan%20Socio%20Local"
-                            class="btn primary btn-block">Empezar Ahora</a>
-                    </article>
-
-                    <!-- TIER 3 -->
-                    <article class="price-card">
-                        <h3 class="plan-name">Dominación</h3>
-                        <div class="plan-price">A Medida</div>
-                        <p class="plan-desc">Infraestructura completa para empresas con múltiples sucursales.</p>
-
-                        <ul class="plan-features">
-                            <li>✨ <strong>Todo lo del plan Socio Local</strong></li>
-                            <li>✅ Desarrollo Web Corporativo</li>
-                            <li>✅ Estrategia SEO multi-ciudad</li>
-                            <li>✅ Consultoría Directa con Fundador</li>
-                        </ul>
-                        <a href="https://wa.me/56951759158?text=Me%20interesa%20el%20plan%20Dominacion"
-                            class="btn outline btn-block">Agendar Reunión</a>
-                    </article>
-
+                <div class="text-center mt-lg">
+                    <a href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20evaluar%20si%20hay%20ventaja%20real%20para%20instalar%20estructura%20comercial%20en%20mi%20negocio"
+                        class="btn primary btn-lg">
+                        Evaluar mi caso
+                    </a>
+                    <p class="text-sm mt-md">
+                        Un mensaje con tu rubro + ciudad + link (si tienes) y te decimos el primer diagnóstico.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- FAQ -->
-        <section class="section-block">
+        <section class="nh-section nh-section--alt svc-faq">
             <div class="container" style="max-width: 800px;">
-                <h2 style="text-align: center; margin-bottom: 40px;">Preguntas Frecuentes</h2>
+                <div class="sec-heading">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
 
-                <details style="padding: 20px 0; border-bottom: 1px solid #eee;">
-                    <summary style="font-weight: 700; cursor: pointer; font-size: 1.1rem;">¿Por qué no ofrecen gestión
-                        de Instagram?</summary>
-                    <p style="margin-top: 10px; color: #555;">Porque Instagram es para entretener, Google es para
-                        vender. Nos enfocamos en el <strong>momento de compra</strong>. Preferimos que aparezcas cuando
-                        alguien busca "necesito un [tu servicio]" que cuando mira fotos de gatos.</p>
+                <details>
+                    <summary>¿Esto incluye redes sociales?</summary>
+                    <p>
+                        Solo si aportan al sistema. No trabajamos “posteos por posteos”.
+                        Si redes ayudan a sostener confianza, claridad y punto de decisión, se integran. Si no, no.
+                    </p>
                 </details>
 
-                <details style="padding: 20px 0; border-bottom: 1px solid #eee;">
-                    <summary style="font-weight: 700; cursor: pointer; font-size: 1.1rem;">¿Cuánto tiempo demora en
-                        funcionar?</summary>
-                    <p style="margin-top: 10px; color: #555;">El plan "Featured" es <strong>inmediato</strong> (te pones
-                        #1 en Hogga.cl al día siguiente). El SEO local en Google Maps toma entre 30 a 90 días en
-                        madurar, pero es un activo que te pertenece y te da leads gratis a largo plazo.</p>
+                <details>
+                    <summary>¿Cuándo se nota que está funcionando?</summary>
+                    <p>
+                        La instalación inicial se ve rápido (estructura y orden). La mejora de posición y consistencia
+                        toma tiempo
+                        porque se construye autoridad real. Lo importante: desde el inicio se mide y se ajusta con
+                        criterio comercial.
+                    </p>
                 </details>
 
-                <details style="padding: 20px 0; border-bottom: 1px solid #eee;">
-                    <summary style="font-weight: 700; cursor: pointer; font-size: 1.1rem;">Ya tengo página web, ¿sirve?
-                    </summary>
-                    <p style="margin-top: 10px; color: #555;">La auditaremos gratis. Si carga lento o no convierte, te
-                        diremos la verdad. A veces es mejor arreglarla, a veces es más barato hacer una nueva optimizada
-                        para conversión (que nosotros incluimos).</p>
+                <details>
+                    <summary>Ya tengo web / ya trabajo con alguien, ¿igual sirve?</summary>
+                    <p>
+                        Sí, si hay espacio real para ganar posición o eliminar fugas. Hacemos una revisión inicial y te
+                        decimos
+                        directo si vale la pena intervenir o si no es el momento.
+                    </p>
                 </details>
+                <details>
+                    <summary>¿Trabajan con cualquier rubro?</summary>
+                    <p>
+                        No. Priorizamos negocios donde existe demanda real y donde hay margen para capturarla sin
+                        depender del precio.
+                        Si no vemos ventaja clara, te lo decimos.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>¿Cómo se cobra el servicio?</summary>
+                    <p>
+                        Trabajamos por instalación + continuidad. No vendemos horas ni “posteos”.
+                        El enfoque depende del punto de partida y del potencial real de captación.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>¿Garantizan resultados?</summary>
+                    <p>
+                        No vendemos magia. Instalamos sistema, medimos y ajustamos con criterio comercial.
+                        Si el mercado o el caso no da, se dice de frente.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>¿Hacen solo diseño web?</summary>
+                    <p>
+                        No hacemos “páginas bonitas”. Hacemos infraestructura comercial: captura de demanda, claridad y
+                        punto de decisión.
+                        Si el diseño no mueve la decisión, no sirve.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>¿Qué necesitan de mí para que esto funcione?</summary>
+                    <p>
+                        Respuesta rápida, acceso a información básica del negocio (servicios, zonas, horarios) y foco.
+                        Nosotros guiamos la prioridad; tú validas y ejecutamos.
+                    </p>
+                </details>
+
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer" style="padding: 40px 0; border-top: 1px solid #eee; text-align: center; color: #666;">
-        <div class="container">
-            <p>&copy; 2026 Hogga Negocios. Ingeniería de Demanda.</p>
-            <p style="font-size: 0.9rem; margin-top: 10px;">
-                <a href="/contacto/">Contacto</a> • <a href="/legal/privacidad">Privacidad</a>
-            </p>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
+    <script defer src="/js/layout.js"></script>
+    <script defer src="/js/main.js?v=20260121"></script>
+    <script defer src="/js/consent-banner.js"></script>
 
 </body>
 

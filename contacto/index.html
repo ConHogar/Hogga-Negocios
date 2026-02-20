@@ -5,147 +5,251 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#136565" />
+  <meta name="theme-color" content="#1a3a3a" />
 
-  <title>Contacto — Hogga Negocios</title>
+  <!-- Performance (opcional) -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+  <link rel="preconnect" href="https://wa.me" />
+
+  <!-- Consent logic (centralizada) -->
+  <script src="/js/consent.js" defer></script>
+
+  <title>Contacto — Hogga Vértice</title>
   <meta name="description"
-    content="Habla directamente con el equipo de Hogga Negocios. Sin formularios eternos. Sin respuestas automáticas." />
-  <link rel="canonical" href="https://negocios.hogga.cl/contacto/" />
+    content="Habla directamente con el equipo de estrategia. Sin tickets de soporte, sin burocracia. Acceso directo para negocios que valoran su tiempo." />
+  <link rel="canonical" href="https://vertice.hogga.cl/contacto/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://negocios.hogga.cl/contacto/" />
-  <meta property="og:title" content="Contacto — Hogga Negocios" />
-  <meta property="og:description" content="Habla directamente con el equipo de Hogga Negocios." />
+  <meta property="og:url" content="https://vertice.hogga.cl/contacto/" />
+  <meta property="og:site_name" content="Hogga Vértice" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:title" content="Contacto — Hogga Vértice" />
+  <meta property="og:description"
+    content="Habla directamente con el equipo de estrategia. Sin tickets de soporte, sin burocracia." />
+  <meta property="og:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+  <meta property="og:image:alt" content="Hogga Vértice — Contacto" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contacto — Hogga Vértice" />
+  <meta name="twitter:description" content="Habla directamente con el equipo de estrategia. Sin tickets de soporte." />
+  <meta name="twitter:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favic/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favic/favicon-16x16.png">
+  <link rel="manifest" href="/images/favic/site.webmanifest">
+  <link rel="mask-icon" href="/images/favic/safari-pinned-tab.svg" color="#136565">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="/images/logo.webp" />
+  <link rel="stylesheet" href="/css/styles.css?v=20260211" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vertice.hogga.cl/contacto/",
+          "url": "https://vertice.hogga.cl/contacto/",
+          "name": "Contacto — Hogga Vértice",
+          "description": "Habla directamente con el equipo de estrategia. Sin tickets de soporte, sin burocracia.",
+          "isPartOf": { "@id": "https://vertice.hogga.cl/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vertice.hogga.cl/" },
+            { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://vertice.hogga.cl/contacto/" }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56V9ZN8P" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- HEADER -->
   <header class="main-header">
     <div class="container header-content">
-      <a class="brand" href="/" aria-label="Hogga, inicio">
-        <img class="logo" src="/images/logo.webp" alt="Hogga" width="120" height="36" />
-        <span class="brand-text">Negocios</span>
+      <a class="brand" href="/" aria-label="Hogga Vértice, inicio">
+        <img class="logo" src="/images/logo.webp" alt="Hogga Vértice" width="120" height="36" />
+        <span class="brand-text">Hogga Vértice</span>
       </a>
 
-      <nav id="site-nav" class="site-nav">
-        <a href="/servicios/">El Sistema</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle-box" aria-hidden="true">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navegación principal">
+        <a href="/servicios/">Servicios</a>
+        <a href="/resultados/">Resultados</a>
         <a href="/decisiones/">Decisiones</a>
-        <a href="https://wa.me/56951759158" class="btn primary btn-sm">Ver si califico</a>
+        <a href="/contacto/">Contacto</a>
+        <a class="nav-cta"
+          href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20evaluar%20el%20posicionamiento%20comercial%20de%20mi%20negocio"
+          target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="negocios-home">
 
-    <!-- HERO: Direct and Clear -->
-    <section class="hero-negocios">
-      <div class="container">
-        <span class="eyebrow">Contacto</span>
+    <!-- 1. HERO: Premium & Direct -->
+    <section class="nh-hero">
+      <div class="nh-hero-inner">
+        <div class="nh-wrap">
+          <p class="nh-hero-tag">Contacto Directo</p>
 
-        <h1>Sin formularios eternos.<br>Sin respuestas automáticas.</h1>
+          <h1>Conversación directa.<br>Sin intermediarios.</h1>
 
-        <p class="lead">
-          Trabajamos con pocos clientes a la vez. Si quieres hablar, hablamos de verdad.
-        </p>
-      </div>
-    </section>
+          <p class="nh-sub">
+            Acceso inmediato a quienes definen la estrategia.<br>
+            Sin tickets de soporte ni ejecutivos que cambian cada mes.
+          </p>
 
-    <!-- MAIN CONTACT OPTIONS -->
-    <section class="section-block">
-      <div class="container">
-        <div class="contact-options">
-
-          <!-- Primary: WhatsApp -->
-          <div class="contact-primary">
-            <div class="contact-primary-content">
-              <h2>Escríbenos por WhatsApp</h2>
-              <p class="sub">La forma más rápida. Respondemos en horario de oficina (lunes a viernes, 9 a 18 hrs).</p>
-
-              <a href="https://wa.me/56951759158?text=Hola%20Hogga%20Negocios,%20quiero%20saber%20si%20mi%20negocio%20califica%20para%20trabajar%20con%20ustedes."
-                class="btn primary" target="_blank" rel="noopener noreferrer">
-                Abrir WhatsApp →
-              </a>
-
-              <p class="contact-note">+56 9 5175 9158</p>
-            </div>
-          </div>
-
-          <!-- Secondary options -->
-          <div class="contact-secondary">
-            <div class="contact-card-alt">
-              <h3>📧 Email</h3>
-              <p>Para consultas más formales o propuestas.</p>
-              <a href="mailto:negocios@hogga.cl" class="contact-link">negocios@hogga.cl</a>
-            </div>
-
-            <div class="contact-card-alt">
-              <h3>📍 Ubicación</h3>
-              <p>Trabajamos remoto, pero somos de acá.</p>
-              <span class="contact-link">Sur de Chile 🇨🇱</span>
-            </div>
+          <div class="nh-cta-block">
+            <a class="nh-btn"
+              href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20evaluar%20si%20mi%20negocio%20califica%20para%20trabajar%20con%20ustedes"
+              target="_blank" rel="noopener noreferrer">
+              Iniciar conversación en WhatsApp
+            </a>
+            <span class="nh-micro">Respuesta habitual: menos de 2 horas (horario oficina).</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="section-block bg-light">
-      <div class="container narrow-text">
-        <h2 class="text-center">Preguntas frecuentes</h2>
-        <p class="sub text-center">Lo que nos preguntan antes de escribir.</p>
+    <!-- 2. CONTACT OPTIONS -->
+    <section class="nh-section">
+      <div class="nh-wrap">
+        <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+
+          <!-- WhatsApp Card -->
+          <div class="info-card info-card--urgent" style="display: flex; flex-direction: column; gap: 16px;">
+            <span class="info-pill">Canal Prioritario</span>
+            <div>
+              <h2 style="font-size: 1.4rem; margin:0 0 8px;">WhatsApp Comercial</h2>
+              <p style="color:var(--muted); line-height:1.6; font-size: 0.95rem;">
+                La vía más rápida para evaluar factibilidad y agendar reuniones.
+                Directo al grano.
+              </p>
+            </div>
+            <div style="margin-top:auto;">
+              <a href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20tengo%20una%20consulta" class="btn outline"
+                style="width:100%; justify-content:center;">
+                Abrir chat →
+              </a>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="info-card" style="display: flex; flex-direction: column; gap: 16px;">
+            <span class="info-pill"
+              style="background:rgba(107, 114, 128, 0.1); color:#374151; border-color:rgba(107, 114, 128, 0.2);">Correo
+              Electrónico</span>
+            <div>
+              <h2 style="font-size: 1.4rem; margin:0 0 8px;">Propuestas & Formalidades</h2>
+              <p style="color:var(--muted); line-height:1.6; font-size: 0.95rem;">
+                Para envío de bases, documentos o consultas que requieren mayor extensión.
+              </p>
+            </div>
+            <div style="margin-top:auto;">
+              <a href="mailto:negocios@hogga.cl" class="btn outline"
+                style="width:100%; justify-content:center; border-color:#d1d5db; color:#374151;">
+                negocios@hogga.cl
+              </a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="info-card info-card--home" style="display: flex; flex-direction: column; gap: 16px;">
+            <span class="info-pill">Origen</span>
+            <div>
+              <h2 style="font-size: 1.4rem; margin:0 0 8px;">Desde el Sur</h2>
+              <p style="color:var(--muted); line-height:1.6; font-size: 0.95rem;">
+                Operamos remoto para todo Chile, pero nuestra base y corazón están en el sur.
+                Entendemos el ritmo local.
+              </p>
+            </div>
+            <div style="margin-top:auto; font-weight:700; color:#136565; display:flex; align-items:center; gap:8px;">
+              <span>🇨🇱 Región de Los Lagos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FAQ -->
+    <section class="nh-section nh-section--alt">
+      <div class="nh-wrap nh-narrow">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <h2>Preguntas antes de conectar</h2>
+          <p>Claridad ante todo. Resolvemos dudas frecuentes antes de la primera llamada.</p>
+        </div>
 
         <div class="faq">
-          <details>
-            <summary><span>¿Trabajan con cualquier negocio?</span></summary>
-            <p>No. Solo aceptamos 3 negocios por ciudad para evitar conflictos de interés. Si ya tenemos un cliente en
-              tu rubro y ciudad, te lo decimos de frente.</p>
-          </details>
-
-          <details>
-            <summary><span>¿Cuánto cuesta?</span></summary>
-            <p>Depende del alcance. Nuestros planes parten en $199.000 + IVA mensuales. Pero antes de hablar de precios,
-              necesitamos saber si calificamos mutuamente.</p>
-          </details>
-
-          <details>
-            <summary><span>¿Cuánto demoran en responder?</span></summary>
-            <p>Dentro del mismo día hábil. Si nos escribes un domingo a las 11 PM, te respondemos el lunes en la mañana.
+          <details
+            style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; margin-bottom:12px; padding:8px 16px;">
+            <summary style="font-weight:700; cursor:pointer; padding:12px 0;">¿Trabajan con cualquier rubro?</summary>
+            <p style="color:var(--muted); padding-bottom:12px; margin:0;">
+              No. Solo aceptamos negocios donde verificamos que existe <b>demanda activa</b> y capacidad de operación.
+              Si no podemos mover la aguja, no tomamos el proyecto.
             </p>
           </details>
 
-          <details>
-            <summary><span>¿Tienen oficina física?</span></summary>
-            <p>Trabajamos 100% remoto desde el sur de Chile. Las reuniones son por videollamada. Funciona mejor así para
-              todos.</p>
+          <details
+            style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; margin-bottom:12px; padding:8px 16px;">
+            <summary style="font-weight:700; cursor:pointer; padding:12px 0;">¿Cuál es el costo del servicio?</summary>
+            <p style="color:var(--muted); padding-bottom:12px; margin:0;">
+              Depende de la fase del negocio. Tenemos planes de instalación desde 7 UF y planes de crecimiento más
+              robustos.
+              Validamos esto en la primera conversación para asegurar que el ROI tenga sentido.
+            </p>
           </details>
 
-          <details>
-            <summary><span>¿Qué pasa si no soy de Chile?</span></summary>
-            <p>Por ahora nos enfocamos en negocios con presencia física en el sur de Chile. Es donde tenemos los datos y
-              la experiencia.</p>
+          <details
+            style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; margin-bottom:12px; padding:8px 16px;">
+            <summary style="font-weight:700; cursor:pointer; padding:12px 0;">¿Hacen solo diseño web?</summary>
+            <p style="color:var(--muted); padding-bottom:12px; margin:0;">
+              No vendemos diseño decorativo. Instalamos infraestructura comercial (Web + SEO + Datos) diseñada para
+              convertir.
+              Una web linda que no vende es un gasto, no una inversión.
+            </p>
           </details>
         </div>
-      </div>
-    </section>
 
-    <!-- FINAL CTA -->
-    <section class="section-block cta-final">
-      <div class="container">
-        <h2>¿Listo para hablar?</h2>
-        <p class="lead">
-          No hay compromiso. Solo una conversación honesta para ver si tiene sentido trabajar juntos.
-        </p>
-        <a href="https://wa.me/56951759158?text=Hola%20Hogga%20Negocios,%20quiero%20conversar%20sobre%20mi%20negocio."
-          class="btn primary" target="_blank" rel="noopener noreferrer">
-          Escribir ahora
-        </a>
+        <div style="text-align:center; margin-top:40px;">
+          <p class="nh-micro">¿Dudas específicas?</p>
+          <a href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20tengo%20una%20pregunta%20antes%20de%20agendar"
+            style="color:var(--nh-accent); font-weight:700; text-decoration:underline;">
+            Escríbenos sin compromiso
+          </a>
+        </div>
       </div>
     </section>
 
@@ -155,63 +259,56 @@
   <footer class="footer">
     <div class="container foot">
       <div class="foot-brand">
-        <strong>Hogga Negocios</strong>
+        <strong>Hogga Vértice</strong>
         <small>
-          Ingeniería de demanda local para negocios serios en Chile.
-          Hecho desde el sur 🇨🇱
+          Estructura comercial para negocios que quieren crecer con criterio.
+          Hecho desde el sur de Chile&nbsp;🇨🇱
         </small>
         <div class="cta-column">
           <a class="foot-cta"
-            href="https://wa.me/56951759158?text=Hola%20Hogga%20Negocios,%20quiero%20ver%20si%20mi%20negocio%20califica."
+            href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20evaluar%20el%20posicionamiento%20comercial%20de%20mi%20negocio"
             target="_blank" rel="noopener noreferrer">
-            Ver si califico →
+            Hablar por WhatsApp
           </a>
         </div>
       </div>
-
       <nav class="foot-links" aria-label="Enlaces del sitio">
         <div>
-          <span class="foot-title">Negocios</span>
+          <span class="foot-title">Explora</span>
           <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/servicios/">El Sistema</a></li>
+            <li><a href="/servicios/">Servicios</a></li>
+            <li><a href="/resultados/">Resultados</a></li>
             <li><a href="/decisiones/">Decisiones</a></li>
             <li><a href="/contacto/">Contacto</a></li>
           </ul>
         </div>
         <div>
-          <span class="foot-title">Servicios</span>
+          <span class="foot-title">Legal</span>
           <ul>
-            <li><a href="/servicios/seo-local/">SEO Local</a></li>
-            <li><a href="/servicios/google-maps/">Google Maps</a></li>
-            <li><a href="/servicios/paginas-web-rapidas/">Páginas Web Rápidas</a></li>
+            <li><a href="/terminos-y-condiciones/">Términos</a></li>
+            <li><a href="/politica-privacidad/">Privacidad</a></li>
           </ul>
         </div>
         <div>
-          <span class="foot-title">Hogga Group</span>
+          <span class="foot-title">Hogga</span>
           <ul>
-            <li><a href="https://hogga.cl/" target="_blank" rel="noopener noreferrer">Hogga.cl</a></li>
             <li><a href="https://hogga.cl/hogga-servicios/" target="_blank" rel="noopener noreferrer">Hogga
-                Servicios</a></li>
-            <li><a href="https://hogga.cl/turismo/" target="_blank" rel="noopener noreferrer">Hogga Turismo</a></li>
+                Servicios</a>
+            </li>
+            <li><a href="https://hogga.cl/turismo/" target="_blank" rel="noopener noreferrer">Hogga
+                Turismo</a></li>
           </ul>
         </div>
       </nav>
     </div>
-
     <div class="container foot-bottom">
       <small>© <span id="y"></span> Hogga Group SpA. Todos los derechos reservados.</small>
-      <small><a href="/legal/privacidad/">Privacidad</a></small>
     </div>
   </footer>
 
-  <script>
-    (function () {
-      const y = document.getElementById('y');
-      if (y) y.textContent = new Date().getFullYear();
-    })();
-  </script>
-
+  <script defer src="/js/main.js?v=20260121"></script>
+  <script defer src="/js/consent-banner.js"></script>
 </body>
 
 </html>
