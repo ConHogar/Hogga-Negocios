@@ -5,35 +5,104 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#136565" />
+    <meta name="theme-color" content="#1a3a3a" />
+
+    <!-- Performance (opcional) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://wa.me" />
+
+    <!-- Consent logic (centralizada) -->
+    <script src="/js/consent.js" defer></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56V9ZN8P');
+    </script>
+    <!-- End Google Tag Manager -->
 
     <title>Optimización de Google Maps para negocios en Chile | Hogga Vértice</title>
     <meta name="description"
-        content="Mejora tu visibilidad y conversiones desde Google Maps (Google Business Profile). Hogga te ayuda a ordenar tu ficha, reforzar confianza y convertir búsquedas locales en clientes." />
+        content="Optimización de Google Maps (Google Business Profile) para negocios en Chile. Ordenamos tu ficha, reforzamos confianza y mejoramos el punto de decisión para convertir búsquedas locales en clientes." />
     <link rel="canonical" href="https://vertice.hogga.cl/servicios/google-maps/" />
 
-    <!-- CSS (ajusta ruta si corresponde) -->
-    <link rel="stylesheet" href="/css/styles.css?v=20260123" />
-
     <!-- Open Graph -->
-    <meta property="og:locale" content="es_CL" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Hogga" />
+    <meta property="og:url" content="https://vertice.hogga.cl/servicios/google-maps/" />
+    <meta property="og:site_name" content="Hogga Vértice" />
+    <meta property="og:locale" content="es_CL" />
     <meta property="og:title" content="Optimización de Google Maps para negocios en Chile | Hogga Vértice" />
     <meta property="og:description"
         content="No basta con aparecer. Te ayudamos a que tu ficha en Google Maps convierta en llamados, reservas y cotizaciones." />
-    <meta property="og:url" content="https://vertice.hogga.cl/servicios/google-maps/" />
-    <meta property="og:image" content="https://vertice.hogga.cl/images/og/hogga-negocios.jpg" />
+    <meta property="og:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+    <meta property="og:image:alt" content="Hogga Vértice — Google Maps" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- JSON-LD: Breadcrumb -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Optimización de Google Maps para negocios en Chile | Hogga Vértice" />
+    <meta name="twitter:description"
+        content="Mejora tu visibilidad y conversiones desde Google Maps. Orden, confianza y punto de decisión." />
+    <meta name="twitter:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
+    <meta name="twitter:image:alt" content="Hogga Vértice — Google Maps" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favic/favicon-16x16.png">
+    <link rel="manifest" href="/images/favic/site.webmanifest">
+    <link rel="mask-icon" href="/images/favic/safari-pinned-tab.svg" color="#136565">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Performance -->
+    <link rel="preload" as="image" href="/images/logo.webp" />
+    <link rel="stylesheet" href="/css/styles.css?v=20260211" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- JSON-LD (WebPage + Breadcrumb + Service) -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vertice.hogga.cl/" },
-      { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://vertice.hogga.cl/servicios/" },
-      { "@type": "ListItem", "position": 3, "name": "Google Maps", "item": "https://vertice.hogga.cl/servicios/google-maps/" }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://vertice.hogga.cl/servicios/google-maps/",
+        "url": "https://vertice.hogga.cl/servicios/google-maps/",
+        "name": "Google Maps — Hogga Vértice",
+        "description": "Optimización de Google Maps (Google Business Profile) para negocios en Chile. Orden, confianza y punto de decisión para convertir búsquedas locales en clientes.",
+        "isPartOf": { "@id": "https://vertice.hogga.cl/#website" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vertice.hogga.cl/" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://vertice.hogga.cl/servicios/" },
+          { "@type": "ListItem", "position": 3, "name": "Google Maps", "item": "https://vertice.hogga.cl/servicios/google-maps/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://vertice.hogga.cl/servicios/google-maps/#service",
+        "name": "Optimización de Google Maps para negocios en Chile",
+        "serviceType": "Google Business Profile (Google Maps)",
+        "provider": { "@id": "https://vertice.hogga.cl/#organization" },
+        "areaServed": "Chile",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://wa.me/56951759158",
+          "availableLanguage": ["es"]
+        }
+      }
     ]
   }
   </script>
@@ -45,15 +114,14 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- HEADER (idéntico estructura Hogga Servicios) -->
+    <!-- HEADER (Vértice) -->
     <header class="main-header">
         <div class="container header-content">
-            <a class="brand" href="/" aria-label="Hogga, inicio">
-                <img class="logo" src="/images/logo.webp" alt="Hogga — red chilena de datos confiables y verificados"
-                    width="120" height="36" />
-                <span class="brand-text">Hogga</span>
+            <a class="brand" href="/" aria-label="Hogga Vértice, inicio">
+                <img class="logo" src="/images/logo.webp" alt="Hogga Vértice" width="120" height="36" />
+                <span class="brand-text">Hogga Vértice</span>
             </a>
-            <!-- Botón hamburger (solo móvil) -->
+
             <button class="nav-toggle" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
                 <span class="nav-toggle-box" aria-hidden="true">
                     <span class="nav-toggle-line"></span>
@@ -61,57 +129,58 @@
                     <span class="nav-toggle-line"></span>
                 </span>
             </button>
+
             <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navegación principal">
-                <a href="/hogga-servicios/">Para hogar</a>
-                <a href="/turismo/">Para viajar</a>
-                <a href="/negocios/">Para negocios</a>
-                <a href="/blog/">Blog</a>
+                <a href="/servicios/">Servicios</a>
+                <a href="/resultados/">Resultados</a>
+                <a href="/decisiones/">Decisiones</a>
                 <a href="/contacto/">Contacto</a>
+                <a class="nav-cta"
+                    href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20ficha%20en%20Google%20Maps.%20Rubro%3A%20__%20Ciudad%3A%20__%20Link%3A%20__"
+                    target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
             </nav>
         </div>
     </header>
 
-    <main id="googlemaps">
+    <main id="googlemaps" class="negocios-home">
 
+        <!-- HERO (igual estilo SEO local) -->
+        <section class="nh-hero nh-hero--light nh-hero--full">
+            <div class="nh-hero-inner">
+                <div class="nh-wrap">
+                    <p class="nh-hero-tag">Google Maps</p>
 
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-bg" aria-hidden="true"></div>
+                    <h1>Que te vean en Maps es el inicio.<br>Que te elijan es el objetivo.</h1>
 
-            <div class="container hero-content">
-                <span class="eyebrow">Hogga Vértice</span>
-                <h1>Optimización de Google Maps para negocios en Chile</h1>
+                    <p class="nh-sub">
+                        Optimización de Google Maps (Google Business Profile) para negocios en Chile:
+                        ordenamos tu ficha y reforzamos señales de <strong>confianza</strong> para mejorar tu
+                        <strong>punto de decisión</strong>
+                        cuando la gente está lista para llamar, reservar o cotizar.
+                    </p>
 
-                <p class="lead">
-                    ¿Tu negocio aparece en Google Maps, pero el teléfono no suena?
-                    Estar en el mapa es el primer paso. Lo que trae clientes es que tu ficha
-                    <strong>genere confianza</strong> y sea clara cuando la gente está lista para <strong>llamar,
-                        reservar o
-                        cotizar</strong>.
-                </p>
+                    <div class="nh-cta-block" style="flex-direction: row; gap: 16px; flex-wrap: wrap;">
+                        <a class="nh-btn"
+                            href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20ficha%20en%20Google%20Maps.%20Rubro%3A%20__%20Ciudad%3A%20__%20Link%3A%20__"
+                            target="_blank" rel="noopener noreferrer">
+                            Evaluar mi ficha
+                        </a>
 
-                <div class="cta-row">
-                    <a class="btn primary"
-                        href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20ficha%20en%20Google%20Maps"
-                        target="_blank" rel="noopener noreferrer">
-                        Hablar por WhatsApp
-                    </a>
+                        <a class="nh-btn" href="#proceso"
+                            style="background:transparent; color:#1a3a3a; border:1px solid #e5e7eb;">
+                            Ver cómo lo trabajamos ↓
+                        </a>
+                    </div>
 
-                    <a class="btn outline" href="/servicios/seo-local/">
-                        Ver SEO local
-                    </a>
+                    <p class="nh-micro" style="margin-top: 14px;">
+                        Envíanos nombre del negocio + ciudad (y si tienes, el link de la ficha) y te decimos qué frena
+                        resultados.
+                    </p>
                 </div>
-
-                <small class="lead-secondary">
-                    Hagámoslo simple: <strong>escríbenos el nombre del negocio + ciudad</strong> y te decimos rápido
-                    si hay algo obvio que está frenando resultados.
-                    <a href="/contacto/"><strong>O si prefieres, contáctanos aquí.</strong></a>
-                </small>
             </div>
         </section>
 
-
-        <!-- SECCIÓN: qué pasa normalmente -->
+        <!-- POST HERO: mantengo tu CSS/clases tal cual -->
         <section class="section alt">
             <div class="container">
                 <h2>Por qué muchas fichas “aparecen” pero no convierten</h2>
@@ -125,17 +194,13 @@
                 <div class="quote">
                     <ul class="clean-list">
                         <li><strong>Google te confunde:</strong> categorías mal elegidas hacen que te muestre en
-                            búsquedas que no te
-                            sirven.</li>
+                            búsquedas que no te sirven.</li>
                         <li><strong>Se siente poco confiable:</strong> horarios, teléfono o dirección inconsistentes
-                            generan dudas
-                            al tiro.</li>
+                            generan dudas al tiro.</li>
                         <li><strong>Parece que no está activo:</strong> fotos viejas, cero publicaciones, respuestas
-                            lentas o
-                            inexistentes.</li>
+                            lentas o inexistentes.</li>
                         <li><strong>No queda claro lo que ofreces:</strong> la gente no entiende rápido si tú eres “la
-                            opción” para
-                            lo que necesita.</li>
+                            opción” para lo que necesita.</li>
                     </ul>
                 </div>
 
@@ -147,14 +212,11 @@
             </div>
         </section>
 
-
-        <!-- SECCIÓN: cómo lo trabaja Hogga -->
         <section class="section">
             <div class="container">
                 <h2>Cómo lo trabajamos en Hogga</h2>
                 <p class="sub" style="max-width:780px">
-                    No vendemos “secretos del algoritmo”. Trabajamos señales reales: claridad, coherencia y confianza
-                    local,
+                    Trabajamos señales reales: claridad, coherencia y confianza local,
                     para convertir búsquedas en acciones (llamar, llegar, reservar, cotizar).
                 </p>
 
@@ -176,7 +238,7 @@
                     <li class="stepper-item">
                         <span class="stepper-dot">3</span>
                         <div class="stepper-label">
-                            <b>Confianza</b> Se trabaja contenido, señales de actividad y reputación (sin humo).
+                            <b>Confianza</b> Se trabaja contenido, señales de actividad y reputación.
                         </div>
                     </li>
                 </ol>
@@ -188,8 +250,6 @@
             </div>
         </section>
 
-
-        <!-- CTA -->
         <section class="section alt">
             <div class="container" style="text-align:center">
                 <h2>¿Revisamos tu ficha?</h2>
@@ -211,8 +271,7 @@
             </div>
         </section>
 
-
-        <!-- FAQ -->
+        <!-- FAQ (si quieres igual a /servicios/, puedo dejarlo sin wrapper .faq) -->
         <section class="section">
             <div class="container">
                 <h2>Preguntas típicas</h2>
@@ -241,8 +300,6 @@
             </div>
         </section>
 
-
-        <!-- Relacionados (reusa tu related-grid/related-card) -->
         <section class="section" id="tambien-te-puede-interesar">
             <div class="container">
                 <h2>También te puede interesar</h2>
@@ -273,9 +330,14 @@
                 </div>
             </div>
         </section>
-        <div id="site-footer"></div>
-        <script defer src="/js/main.js?v=20260121"></script>
-        <script defer src="/js/layout.js"></script>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script defer src="/js/layout.js"></script>
+    <script defer src="/js/main.js?v=20260121"></script>
+    <script defer src="/js/consent-banner.js"></script>
 </body>
 
 </html>

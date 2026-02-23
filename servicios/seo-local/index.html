@@ -5,13 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#136565" />
+    <meta name="theme-color" content="#1a3a3a" />
 
-    <!-- Performance -->
+    <!-- Performance (opcional) -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://wa.me" />
-
 
     <!-- Consent logic (centralizada) -->
     <script src="/js/consent.js" defer></script>
@@ -19,41 +18,38 @@
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-56V9ZN8P');
     </script>
+    <!-- End Google Tag Manager -->
 
-    <!-- Title & Meta -->
     <title>SEO local para negocios en Chile | Hogga Vértice</title>
     <meta name="description"
-        content="SEO local para negocios en Chile. Ayudamos a mejorar la visibilidad en Google y Google Maps cuando las personas buscan servicios reales en su ciudad." />
+        content="SEO local para negocios en Chile. Instalamos una base clara para aparecer mejor en Google y Google Maps cuando la gente busca servicios reales en su ciudad." />
     <link rel="canonical" href="https://vertice.hogga.cl/servicios/seo-local/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vertice.hogga.cl/servicios/seo-local/" />
-    <meta property="og:site_name" content="Hogga" />
+    <meta property="og:site_name" content="Hogga Vértice" />
     <meta property="og:locale" content="es_CL" />
-    <meta property="og:title" content="SEO local para negocios en Chile | Hogga" />
+    <meta property="og:title" content="SEO local para negocios en Chile | Hogga Vértice" />
     <meta property="og:description"
         content="Aparecer mejor en Google y Google Maps cuando las personas buscan una solución concreta en su ciudad." />
     <meta property="og:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
-    <meta property="og:image:alt" content="SEO local para negocios en Chile - Hogga Vértice" />
+    <meta property="og:image:alt" content="Hogga Vértice — SEO local" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SEO local para negocios en Chile | Hogga" />
+    <meta name="twitter:title" content="SEO local para negocios en Chile | Hogga Vértice" />
     <meta name="twitter:description"
         content="Posicionamiento local enfocado en búsquedas reales y clientes de calidad." />
     <meta name="twitter:image" content="https://vertice.hogga.cl/images/og-hogga.jpg" />
-    <meta name="twitter:image:alt" content="SEO local para negocios en Chile - Hogga Vértice" />
+    <meta name="twitter:image:alt" content="Hogga Vértice — SEO local" />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
@@ -63,9 +59,9 @@
     <link rel="mask-icon" href="/images/favic/safari-pinned-tab.svg" color="#136565">
     <link rel="icon" href="/favicon.ico">
 
-    <!-- Styles -->
+    <!-- Performance -->
     <link rel="preload" as="image" href="/images/logo.webp" />
-    <link rel="stylesheet" href="/css/styles.css?v=20260123" />
+    <link rel="stylesheet" href="/css/styles.css?v=20260211" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,11 +69,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap"
         rel="stylesheet">
 
-    <!-- JSON-LD -->
+    <!-- JSON-LD (WebPage + Breadcrumb + Service) -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://vertice.hogga.cl/servicios/seo-local/",
+        "url": "https://vertice.hogga.cl/servicios/seo-local/",
+        "name": "SEO local — Hogga Vértice",
+        "description": "SEO local para negocios en Chile. Base clara para aparecer mejor en Google y Google Maps cuando la gente busca servicios reales en su ciudad.",
+        "isPartOf": { "@id": "https://vertice.hogga.cl/#website" }
+      },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -90,10 +94,8 @@
         "@type": "Service",
         "@id": "https://vertice.hogga.cl/servicios/seo-local/#service",
         "name": "SEO local para negocios en Chile",
-        "description": "Servicio de SEO local enfocado en mejorar la visibilidad en Google y Google Maps para negocios y servicios en Chile.",
-        "provider": {
-          "@id": "https://vertice.hogga.cl/#organization"
-        },
+        "serviceType": "SEO local",
+        "provider": { "@id": "https://vertice.hogga.cl/#organization" },
         "areaServed": "Chile",
         "availableChannel": {
           "@type": "ServiceChannel",
@@ -113,15 +115,13 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- HEADER (idéntico estructura Hogga Servicios) -->
     <header class="main-header">
         <div class="container header-content">
-            <a class="brand" href="/" aria-label="Hogga, inicio">
-                <img class="logo" src="/images/logo.webp" alt="Hogga — red chilena de datos confiables y verificados"
-                    width="120" height="36" />
-                <span class="brand-text">Hogga</span>
+            <a class="brand" href="/" aria-label="Hogga Vértice, inicio">
+                <img class="logo" src="/images/logo.webp" alt="Hogga Vértice" width="120" height="36" />
+                <span class="brand-text">Hogga Vértice</span>
             </a>
-            <!-- Botón hamburger (solo móvil) -->
+
             <button class="nav-toggle" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
                 <span class="nav-toggle-box" aria-hidden="true">
                     <span class="nav-toggle-line"></span>
@@ -129,136 +129,137 @@
                     <span class="nav-toggle-line"></span>
                 </span>
             </button>
+
             <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navegación principal">
-                <a href="/hogga-servicios/">Para hogar</a>
-                <a href="/turismo/">Para viajar</a>
-                <a href="/negocios/">Para negocios</a>
-                <a href="/blog/">Blog</a>
+                <a href="/servicios/">Servicios</a>
+                <a href="/resultados/">Resultados</a>
+                <a href="/decisiones/">Decisiones</a>
                 <a href="/contacto/">Contacto</a>
+                <a class="nav-cta"
+                    href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20SEO%20local.%20Rubro%3A%20__%20Ciudad%3A%20__%20Link%3A%20__"
+                    target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
             </nav>
         </div>
     </header>
 
-    <main id="seolocal">
+    <main id="seolocal" class="negocios-home">
 
-        <section class="hero hero--seo-local">
-            <!-- Background image -->
-            <div class="hero-bg" style="background:
-         linear-gradient(0deg, rgba(11,46,46,.70), rgba(11,46,46,.70)),
-         url('/images/mapblur.webp') center / cover no-repeat;">
-            </div>
+        <!-- HERO (mismo estilo que páginas rápidas: nh-hero light + full) -->
+        <section class="nh-hero nh-hero--light nh-hero--full">
+            <div class="nh-hero-inner">
+                <div class="nh-wrap">
+                    <p class="nh-hero-tag">SEO Local</p>
 
-            <div class="container hero-content">
-                <span class="eyebrow">SEO local · Google · Google Maps</span>
+                    <h1>Aparece cuando te están buscando.<br>Y convierte mejor.</h1>
 
-                <h1>SEO local para negocios en Chile</h1>
+                    <p class="nh-sub">
+                        Instalamos una base de SEO local para ganar <strong>posición</strong> en Google y Google Maps
+                        y mejorar tu <strong>punto de decisión</strong> cuando existe intención real en tu ciudad.
+                    </p>
 
-                <p class="lead">
-                    Aparecer mejor en <strong>Google y Google Maps</strong> cuando las personas buscan
-                    un servicio real en su ciudad.
-                    Sin trucos. Sin humo. Enfocado en generar contactos reales.
-                </p>
+                    <div class="nh-cta-block" style="flex-direction: row; gap: 16px; flex-wrap: wrap;">
+                        <a class="nh-btn"
+                            href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20SEO%20local.%20Rubro%3A%20__%20Ciudad%3A%20__%20Link%3A%20__"
+                            target="_blank" rel="noopener noreferrer">
+                            Evaluar mi caso
+                        </a>
 
-                <div class="cta-row">
-                    <a class="btn primary"
-                        href="https://wa.me/56951759158?text=Hola%20Hogga%2C%20quiero%20mejorar%20mi%20SEO%20local"
-                        target="_blank" rel="noopener noreferrer">
-                        Hablar por WhatsApp
-                    </a>
+                        <a class="nh-btn" href="#proceso"
+                            style="background:transparent; color:#1a3a3a; border:1px solid #e5e7eb;">
+                            Ver cómo lo trabajamos ↓
+                        </a>
+                    </div>
 
-                    <a class="btn outline" href="/">
-                        Ver Hogga Vértice
-                    </a>
-                </div>
-
-                <p class="lead-secondary">
-                    Ideal para empresas de servicios, locales físicos y negocios que dependen de búsquedas locales.
-                </p>
-            </div>
-        </section>
-
-        <section class="trust">
-            <div class="container trust-row">
-                <div class="trust-item">
-                    <span class="dot"></span>
-                    Enfoque local real (Chile)
-                </div>
-                <div class="trust-item">
-                    <span class="dot"></span>
-                    Google y Google Maps primero
-                </div>
-                <div class="trust-item">
-                    <span class="dot"></span>
-                    Estrategia aplicada, no teoría
+                    <p class="nh-micro" style="margin-top: 14px;">
+                        Ideal para servicios locales y negocios donde cada llamado cuenta (cotizaciones, reservas,
+                        urgencias).
+                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- POST HERO: PRUEBA RÁPIDA (con puente Vértice) -->
         <section class="section alt">
             <div class="container">
-                <h2>Haz esta prueba ahora (toma 30 segundos)</h2>
+                <h2>¿Estás perdiendo clientes en Google?</h2>
 
                 <p class="sub" style="max-width:780px">
-                    No confíes en suposiciones. Mira lo que ve un cliente real cuando te busca.
+                    Si tu negocio no aparece (o aparece pero no convence), la demanda igual se convierte… solo que en
+                    otro.
+                    Esta prueba te muestra la realidad en 30 segundos.
                 </p>
 
                 <div class="quote">
                     <ol class="clean-list">
-                        <li><strong>Abre Google en modo incógnito</strong> (para no influir con tu historial).</li>
-                        <li><strong>Busca:</strong> “<em>tu servicio</em> en <em>tu ciudad</em>”.</li>
-                        <li><strong>Mira los primeros 3 resultados</strong> (mapa y orgánicos).</li>
+                        <li><strong>Abre Google en modo incógnito</strong> (para evitar sesgo).</li>
+                        <li><strong>Busca exactamente como te buscan:</strong> “<em>tu servicio</em> + <em>tu
+                                ciudad</em>”.</li>
+                        <li><strong>Mira el mapa y los 3 primeros:</strong> ¿apareces? ¿y se entiende por qué elegirte?
+                        </li>
                     </ol>
                 </div>
 
                 <div class="note" style="max-width:780px; margin:18px auto 0">
-                    <strong>Si no estás ahí:</strong> estás regalando una gran parte de los clics y llamados.
-                    Y si estás, pero nadie te llama, el problema ya no es visibilidad, es <strong>conversión</strong>.
+                    <strong>Si no apareces:</strong> el problema es <strong>captura</strong> (señales y relevancia).<br>
+                    <strong>Si apareces pero no te llaman:</strong> el problema es <strong>punto de decisión</strong>
+                    (claridad, confianza y acción).
                 </div>
+
+                <p class="sub" style="max-width:780px; margin-top:16px">
+                    Abajo tienes las señales que más se repiten cuando un negocio sube en local y por dónde partir para
+                    mejorar
+                    visibilidad <strong>y</strong> conversión.
+                </p>
             </div>
         </section>
 
-
+        <!-- QUÉ ES SEO LOCAL (ajuste leve para sonar más Vértice) -->
         <section class="section">
             <div class="container">
                 <h2>Qué se entiende por SEO local (en simple)</h2>
 
                 <p class="sub" style="max-width:820px">
-                    El <strong>SEO local</strong> es el trabajo de ordenar señales para que una empresa aparezca mejor
-                    cuando alguien busca una solución <strong>en su ciudad</strong> o en su zona.
-                    No se trata de “tener más visitas”, sino de aparecer en el momento correcto, con claridad y
-                    confianza.
+                    El <strong>SEO local</strong> es ordenar señales para que tu negocio aparezca cuando alguien
+                    busca una solución
+                    <strong>en su ciudad</strong>.
+                    No es “tener más visitas”: es aparecer en el momento correcto y convertir esa intención en
+                    llamados, reservas o
+                    cotizaciones.
                 </p>
 
                 <div class="stats-grid">
                     <article class="stat-card">
                         <div class="stat-label">Búsquedas con intención</div>
-                        <p>Personas que ya están decidiendo: necesitan una solución ahora, no “inspiración”.</p>
+                        <p>Gente que ya está decidiendo. Necesitan resolver ahora, no “explorar”.</p>
                     </article>
 
                     <article class="stat-card">
                         <div class="stat-label">Decisión rápida</div>
-                        <p>En muchos rubros, el cliente compara en segundos y elige al que le da más confianza.</p>
+                        <p>En muchos rubros locales, comparan en segundos y eligen al que se entiende y se ve
+                            confiable.</p>
                     </article>
 
                     <article class="stat-card">
                         <div class="stat-label">Contexto local</div>
-                        <p>La ubicación, la categoría y la relevancia local cambian completamente la competencia.</p>
+                        <p>Ubicación, categoría y relevancia local cambian completamente la competencia.</p>
                     </article>
                 </div>
 
                 <div class="note" style="margin-top:18px">
-                    <strong>Nota rápida:</strong> SEO local no es una “acción única”.
-                    Es un sistema de orden + consistencia para que Google muestre a la empresa cuando corresponde.
+                    <strong>Regla simple:</strong> si no se entiende en 5 segundos (qué haces + dónde + cómo
+                    contactarte),
+                    estás perdiendo oportunidades.
                 </div>
             </div>
         </section>
 
+        <!-- PARA QUÉ EMPRESAS (igual, con copy un poco más “filtro”) -->
         <section class="section alt">
             <div class="container">
                 <h2>¿Para qué empresas tiene sentido?</h2>
 
                 <p class="sub" style="max-width:820px">
-                    Funciona mejor cuando la empresa depende de que la encuentren en Google y Google Maps para generar
+                    Funciona mejor cuando tu negocio depende de búsquedas locales para generar
                     <strong>llamados, reservas o cotizaciones</strong>.
                 </p>
 
@@ -267,8 +268,8 @@
                         <div class="stat-label">Sí aplica si…</div>
                         <ul class="clean-list">
                             <li>Atiendes en una ciudad o zona específica.</li>
-                            <li>Vendes servicios (o atención presencial) y te buscan por necesidad.</li>
-                            <li>Te importa la calidad de los contactos, no el volumen de visitas.</li>
+                            <li>Te buscan por necesidad (servicios, atención presencial, urgencias).</li>
+                            <li>Te importa la calidad del contacto, no “visitas” por ego.</li>
                         </ul>
                     </article>
 
@@ -277,7 +278,7 @@
                         <ul class="clean-list">
                             <li>Eres e-commerce puro sin foco local.</li>
                             <li>Tu venta es 100% nacional sin ubicación relevante.</li>
-                            <li>Estás validando recién una idea sin operación estable.</li>
+                            <li>Aún no hay operación estable (horarios, capacidad, atención).</li>
                         </ul>
                     </article>
                 </div>
@@ -288,81 +289,77 @@
                         target="_blank" rel="noopener noreferrer">
                         Consultar si aplica para mi empresa
                     </a>
-                    <a class="btn outline" href="/">
-                        Ver el servicio completo
+                    <a class="btn outline" href="/servicios/">
+                        Ver servicios
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- MITOS (igual, solo microajustes) -->
         <section class="section">
             <div class="container">
                 <h2>Mitos comunes sobre aparecer en Google</h2>
 
                 <p class="sub" style="max-width:780px">
-                    Muchos negocios toman malas decisiones porque parten de supuestos incorrectos.
-                    Aclaremos lo más común.
+                    Mucha plata se pierde por partir de supuestos incorrectos. Aclaremos lo más común.
                 </p>
 
                 <div class="stats-grid">
                     <article class="stat-card">
                         <div class="stat-label">❌ El mito</div>
                         <p>“Si no pago Google Ads, no aparezco.”</p>
-                        <p><strong>✔ La realidad:</strong> Google Maps y el posicionamiento local son mayoritariamente
+                        <p><strong>✔ La realidad:</strong> Maps y el posicionamiento local son mayoritariamente
                             orgánicos.
-                            Ads sirve para acelerar o complementar, no para reemplazar una base mal armada.</p>
+                            Ads puede acelerar o complementar, pero no arregla una base desordenada.</p>
                     </article>
 
                     <article class="stat-card">
                         <div class="stat-label">❌ El mito</div>
                         <p>“Necesito cientos de reseñas para competir.”</p>
-                        <p><strong>✔ La realidad:</strong> Google valora más la <strong>frecuencia, coherencia y
+                        <p><strong>✔ La realidad:</strong> Google suele valorar más <strong>frecuencia, coherencia y
                                 respuestas</strong>
-                            que una avalancha de estrellas sospechosas.</p>
+                            que una avalancha rara de estrellas.</p>
                     </article>
 
                     <article class="stat-card">
                         <div class="stat-label">❌ El mito</div>
                         <p>“El SEO se hace una vez y listo.”</p>
-                        <p><strong>✔ La realidad:</strong> Es un sistema vivo. El orden inicial importa,
-                            pero la constancia es lo que mantiene resultados.</p>
+                        <p><strong>✔ La realidad:</strong> primero ordenas la base, luego sostienes señales. Eso
+                            mantiene resultados.</p>
                     </article>
                 </div>
 
                 <div class="note" style="max-width:780px; margin:18px auto 0">
-                    <strong>Clave:</strong> en Hogga no elegimos entre orgánico o Ads por dogma.
-                    Elegimos lo que genera <strong>clientes reales</strong> según el momento del negocio.
+                    <strong>Clave Vértice:</strong> no elegimos orgánico o Ads por dogma. Elegimos lo que genera
+                    <strong>clientes reales</strong> según el momento del negocio.
                 </div>
             </div>
         </section>
 
-
-        <!-- SECCIÓN: señales clave -->
+        <!-- SEÑALES CLAVE -->
         <section class="section">
             <div class="container">
                 <h2>Las señales que normalmente mueven la aguja (en Chile)</h2>
                 <p class="sub" style="max-width:820px">
-                    No es “un truco”. Es ordenar señales para que Google te entienda y para que el cliente te elija
+                    No es “un truco”. Es orden + consistencia para que Google te entienda y el cliente te elija
                     rápido.
-                    Estas son las que más se repiten cuando un negocio despega en búsquedas locales.
                 </p>
 
                 <div class="quote">
                     <ul class="clean-list">
-                        <li><strong>Google Maps bien trabajado:</strong> categorías correctas, servicios claros, fotos
-                            reales,
+                        <li><strong>Google Maps bien trabajado:</strong> categorías correctas, servicios claros,
+                            fotos reales,
                             horario impecable, y buena respuesta a reseñas.</li>
                         <li><strong>Coherencia NAP:</strong> mismo nombre, dirección y teléfono en todos lados (web,
                             redes,
                             directorios, etc.).</li>
-                        <li><strong>Reputación activa:</strong> reseñas constantes (no “una vez al año”), respuestas
-                            bien hechas y
-                            señales de confianza.</li>
-                        <li><strong>Contenido por intención:</strong> páginas que respondan búsquedas reales tipo
-                            “servicio +
-                            ciudad” o “rubro + zona”.</li>
+                        <li><strong>Reputación activa:</strong> reseñas constantes y respuestas bien hechas.</li>
+                        <li><strong>Contenido por intención:</strong> páginas que respondan búsquedas tipo “servicio
+                            + ciudad”.</li>
                         <li><strong>Web rápida y clara:</strong> en celular se entiende en segundos y el botón
-                            (WhatsApp/llamar/cotizar) está siempre a mano.</li>
+                            (WhatsApp/llamar/cotizar)
+                            está siempre a mano.</li>
                     </ul>
                 </div>
 
@@ -371,55 +368,51 @@
                     <a href="/servicios/google-maps/"><strong>Google Maps</strong></a>
                     y asegúrate de tener una
                     <a href="/servicios/paginas-web-rapidas/"><strong>web rápida</strong></a>.
-                    Después, recién escalamos con páginas por intención.
+                    Después escalamos con páginas por intención.
                 </p>
             </div>
         </section>
 
-        <!-- SECCIÓN: errores típicos -->
+        <!-- ERRORES TÍPICOS -->
         <section class="section alt">
             <div class="container">
                 <h2>Errores típicos que frenan el SEO local</h2>
                 <p class="sub" style="max-width:820px">
-                    Lo normal es que el negocio sea bueno… pero las señales estén desordenadas o débiles. Y ahí la
-                    competencia te
-                    pasa por arriba,
+                    Lo normal es que el negocio sea bueno… pero las señales estén desordenadas. Y ahí te pasan por
+                    arriba,
                     aunque trabajen peor.
                 </p>
 
                 <div class="quote">
                     <ul class="clean-list">
-                        <li><strong>Categoría equivocada:</strong> Google te muestra en búsquedas que no te sirven (o no
-                            te muestra
-                            donde sí importa).</li>
+                        <li><strong>Categoría equivocada:</strong> te muestran en búsquedas que no sirven (o no te
+                            muestran donde sí importa).</li>
                         <li><strong>Ficha “a medias”:</strong> faltan servicios, fotos actuales, descripción clara o
-                            datos
-                            consistentes.</li>
-                        <li><strong>Reseñas sin estrategia:</strong> pocas, antiguas, o sin respuestas (y eso pega
-                            directo en
+                            datos consistentes.</li>
+                        <li><strong>Reseñas sin sistema:</strong> pocas, antiguas, o sin respuestas (pega directo en
                             confianza).</li>
-                        <li><strong>Web lenta/confusa:</strong> entra gente desde Maps, pero no entiende y se va.</li>
-                        <li><strong>Inconsistencia:</strong> dirección distinta entre Facebook, web y Google (pequeños
-                            enredos que
-                            confunden).</li>
+                        <li><strong>Web lenta/confusa:</strong> entra gente desde Maps, pero no entiende y se va.
+                        </li>
+                        <li><strong>Inconsistencia:</strong> dirección/teléfono distinto entre Facebook, web y
+                            Google.</li>
                     </ul>
                 </div>
 
                 <div class="note" style="max-width:820px; margin:18px auto 0">
-                    <strong>Regla simple:</strong> si tu negocio no se entiende en 5 segundos (qué haces + dónde + cómo
-                    contactarte),
+                    <strong>Regla simple:</strong> si tu negocio no se entiende en 5 segundos (qué haces + dónde +
+                    cómo contactarte),
                     estás perdiendo oportunidades.
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN: proceso -->
+        <!-- PROCESO (mantengo tus clases y stepper) -->
         <section class="section" id="proceso">
             <div class="container">
-                <h2>Cómo lo trabajamos en Hogga</h2>
+                <h2>Cómo lo trabajamos en Hogga Vértice</h2>
                 <p class="sub" style="max-width:820px">
-                    Sin humo. Partimos por lo que genera impacto real (Maps + confianza + claridad) y dejamos un sistema
-                    simple
+                    Sin humo. Partimos por lo que genera impacto real (Maps + confianza + claridad) y dejamos un
+                    sistema simple
                     para sostener resultados.
                     La meta no es “tener más visitas”. La meta es <strong>más clientes</strong>.
                 </p>
@@ -428,18 +421,16 @@
                     <li class="stepper-item">
                         <span class="stepper-dot">1</span>
                         <div class="stepper-label">
-                            <b>Sacamos la foto actual</b> Revisamos ficha, web y competencia local como si fuéramos un
-                            cliente
-                            apurado.
+                            <b>Sacamos la foto actual</b> Revisamos ficha, web y competencia local como si fuéramos
+                            un cliente apurado.
                         </div>
                     </li>
 
                     <li class="stepper-item">
                         <span class="stepper-dot">2</span>
                         <div class="stepper-label">
-                            <b>Ordenamos lo que confunde</b> Categorías, mensajes, datos viejos y estructura. Todo lo
-                            que hoy te
-                            frena.
+                            <b>Ordenamos lo que confunde</b> Categorías, mensajes, datos viejos y estructura. Todo
+                            lo que hoy te frena.
                         </div>
                     </li>
 
@@ -447,17 +438,15 @@
                         <span class="stepper-dot">3</span>
                         <div class="stepper-label">
                             <b>Activamos señales de confianza</b> Reseñas, fotos y contenido que responda lo que la
-                            gente busca de
-                            verdad.
+                            gente busca de verdad.
                         </div>
                     </li>
 
                     <li class="stepper-item">
                         <span class="stepper-dot">4</span>
                         <div class="stepper-label">
-                            <b>Ajuste de precisión</b> Miramos si hay llamados/reservas/cotizaciones y afinamos hasta
-                            que convierta
-                            mejor.
+                            <b>Ajuste de precisión</b> Medimos si hay llamados/reservas/cotizaciones y afinamos
+                            hasta que convierta mejor.
                         </div>
                     </li>
                 </ol>
@@ -492,14 +481,15 @@
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- FAQ (formato igual a /servicios/: sin wrapper especial, solo details) -->
         <section class="section">
-            <div class="container">
-                <h2>Preguntas típicas</h2>
-
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align:center; margin-bottom: 40px; font-weight: 800; color:var(--brand);">
+                    Preguntas Frecuentes
+                </h2>
                 <div class="faq">
                     <details>
-                        <summary><span>¿SEO local es lo mismo que Google Maps?</span></summary>
+                        <summary>¿SEO local es lo mismo que Google Maps?</summary>
                         <p>
                             Google Maps (Google Business Profile) suele ser el corazón del SEO local, pero no es lo
                             único.
@@ -508,7 +498,7 @@
                     </details>
 
                     <details>
-                        <summary><span>¿Cuánto se demora en verse un cambio?</span></summary>
+                        <summary>¿Cuánto se demora en verse un cambio?</summary>
                         <p>
                             Depende del punto de partida. A veces hay mejoras rápidas (categorías, orden, claridad).
                             Otras requieren constancia (reseñas, fotos, actividad y contenido).
@@ -516,23 +506,21 @@
                     </details>
 
                     <details>
-                        <summary><span>¿Tengo que pagarle a Google para aparecer arriba?</span></summary>
+                        <summary>¿Tengo que pagarle a Google para aparecer arriba?</summary>
                         <p>
                             No necesariamente. Existe Google Ads (pagas por clic) y también el posicionamiento
                             <strong>orgánico</strong>.
-                            En Hogga trabajamos ambos, según el caso.
+                            En Vértice trabajamos ambos, según el caso.
                         </p>
                         <p>
                             El orgánico busca que Google te elija porque entiende que eres relevante y confiable.
                             Los Ads sirven para acelerar resultados, lanzar algo puntual o competir cuando el mercado
-                            está muy
-                            peleado.
+                            está muy peleado.
                         </p>
                         <p>
                             Lo importante no es “salir primero”, sino que <strong>lo que inviertas —en Ads u orgánico—
                                 se transforme
-                                en llamados,
-                                reservas o cotizaciones reales</strong>.
+                                en llamados, reservas o cotizaciones reales</strong>.
                         </p>
                     </details>
                 </div>

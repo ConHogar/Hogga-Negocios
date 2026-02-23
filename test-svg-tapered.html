@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { background: #1a2d4a; margin: 0; padding: 0; height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .box { width: 100%; height: 600px; border: 1px solid red; position: relative; overflow: hidden; }
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+    /* We duplicate the SVG to create the "shadow/reflection" effect seen in the user's image. 
+       Or we can use drop-shadow filter. */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><defs><filter id="f1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="20" dy="50" stdDeviation="20" flood-color="%23000000" flood-opacity="0.4"/></filter></defs><path d="M 300 900 C 600 750 750 500 850 300 L 780 300 L 950 100 L 980 350 L 920 320 C 820 550 650 820 250 900 Z" fill="rgba(232, 119, 42, 0.15)" filter="url(%23f1)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
