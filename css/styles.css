@@ -431,6 +431,20 @@ h2 {
 
 /* How it works center alignment */
 
+/* ===== Grid Split Setup ===== */
+.nh-grid-split {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+@media (min-width: 760px) {
+  .nh-grid-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
 
 /* ===== Stats (Counters) ===== */
 
