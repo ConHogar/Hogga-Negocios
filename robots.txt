@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Exclude private components and test files
+Disallow: /partials/
+Disallow: /test-*.html
+
+# Link to sitemap
+Sitemap: https://vertice.hogga.cl/sitemap.xml

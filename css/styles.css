@@ -1086,6 +1086,15 @@ a:focus-visible {
     border-radius: 8px;
   }
 
+  .main-header .site-nav a:not(.nav-cta) {
+    color: #374151;
+  }
+
+  .main-header .site-nav a:not(.nav-cta):hover {
+    color: #1a2d4a;
+    background: #f1f5f9;
+  }
+
   /* separadores sutiles en vez de grandes espacios */
   .site-nav a+a {
     border-top: 1px solid #eef2f7;
