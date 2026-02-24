@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Generador OG Image - Hogga Vértice</title>
+    <!-- Fuentes de la marca -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            background: #2a2a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* El contenedor tiene exactamente la medida estándar de Open Graph */
+        .og-canvas {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(160deg, #1a2d4a 0%, #122036 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 80px 100px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .og-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .og-tag {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: #e8772a;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .og-title {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 80px;
+            color: #ffffff;
+            line-height: 1.1;
+            margin: 0 0 25px 0;
+            max-width: 950px;
+        }
+
+        .og-title span {
+            color: #e8772a;
+        }
+
+        .og-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+            max-width: 850px;
+            margin: 0;
+        }
+
+        .og-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .og-logo {
+            height: 50px;
+        }
+
+        /* Elementos decorativos de fondo basados en tu marca */
+        .og-shape-1 {
+            position: absolute;
+            right: -150px;
+            bottom: -200px;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(232, 119, 42, 0.12) 0%, rgba(26, 45, 74, 0) 65%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .og-shape-2 {
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .og-shape-3 {
+            position: absolute;
+            right: 150px;
+            top: 150px;
+            width: 200px;
+            height: 200px;
+            border: 1px dashed rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .og-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #e8772a;
+            z-index: 3;
+        }
+
+        .og-domain {
+            font-size: 26px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Este es el bloque exacto de 1200x630 que debes capturar (screenshot) -->
+    <div class="og-canvas" id="canvas">
+        <div class="og-line"></div>
+        <div class="og-shape-1"></div>
+        <div class="og-shape-2"></div>
+        <div class="og-shape-3"></div>
+
+        <div class="og-content">
+            <div class="og-tag">Consultoría Owner-to-Owner</div>
+            <h1 class="og-title">Activa el crecimiento comercial de tu negocio.</h1>
+            <p class="og-subtitle">Estructura comercial, captura de intención local y posicionamiento diseñado para
+                mercados competitivos.</p>
+        </div>
+
+        <div class="og-footer">
+            <img src="images/logo.webp" class="og-logo" alt="Hogga Vértice">
+            <div class="og-domain">vertice.hogga.cl</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
